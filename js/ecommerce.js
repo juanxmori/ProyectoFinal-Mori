@@ -10,7 +10,7 @@ const btnRealizarCompra = document.getElementById("btnRealizarCompra");
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    productos = await fetch("/datos/productos.json").then((res) => res.json());
+    productos = await fetch("./datos/productos.json").then((res) => res.json());
     mostrarProductos();
     mostrarCarrito();
   } catch (error) {
